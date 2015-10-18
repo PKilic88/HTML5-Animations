@@ -1,17 +1,40 @@
 @import "flex_mixin";
 
+body {
+  font-family: "Open Sans Condensed";
+  color: #222;
+}
+
 #animation_wrapper {
-  .display_flex();
+  text-align: center;
 
   header {
     h1 {
-      font-size: 40px;
+      font-size: 3em;
     }
   }
 
-  section {
-    h2 {
+  .main {
+    .display_flex();
+    justify-content: space-around;
+    margin-top: 40px;
+    //.direction_column();
 
+    > article {
+      border: 1px solid #999;
+      width: 300px;
+    }
+    a {
+      font-size: 1.3em;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      > div {
+        padding: 20px;
+      }
     }
   }
 }
