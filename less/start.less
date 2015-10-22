@@ -21,20 +21,38 @@ body {
     //.direction_column();
 
     > article {
-      border: 1px solid #999;
       width: 300px;
-    }
-    a {
-      font-size: 1.3em;
 
-      &:hover {
-        cursor: pointer;
+      > a {
         text-decoration: none;
+
+        font-size: 1.3em;
+
+        &:hover {
+          cursor: pointer;
+          color: #fff;
+        }
+
+        > div {
+          border: 1px solid #999;
+          padding: 20px;
+
+          &:hover {
+            background-color: #337ab7;
+          }
+        }
       }
 
-      > div {
-        padding: 20px;
+      > ul {
+        margin-top: 20px;
+        display: none;
+
+        > li {
+          margin-top: 10px;
+        }
       }
     }
+
+
   }
 }

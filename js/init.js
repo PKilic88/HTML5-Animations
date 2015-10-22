@@ -26,8 +26,8 @@ requirejs.config({
 
 });
 
-requirejs(["loadAnimations"], function(LoadAnimations) {
-    var loadAnimations = new LoadAnimations();
+requirejs(["start"], function(Start) {
+    var start = new Start();
 
-    loadAnimations.init();
+    start.init();
 });
