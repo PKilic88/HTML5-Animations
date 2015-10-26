@@ -2,6 +2,12 @@
  * Created by Philipp on 11.10.2015.
  */
 
-define([], function () {
+define(["jquery"], function ($) {
+    var Belegungsstrategie = function () {
+        this.initAnimation = function() {
 
+        };
+    };
+
+    return Belegungsstrategie;
 });

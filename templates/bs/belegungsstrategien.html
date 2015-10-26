@@ -3,8 +3,41 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Belegungsstrategien</title>
+    <link rel="stylesheet" type="text/css" href="/HTML5-Animations/less/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400,400italic|Open+Sans+Condensed:300,400,600,700" />
+    <link rel="stylesheet" type="text/css" href="/HTML5-Animations/less/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="/HTML5-Animations/less/flex_mixin.less">
+    <link rel="stylesheet/less" type="text/css" href="/HTML5-Animations/less/main.less">
+    <link rel="stylesheet/less" type="text/css" href="/HTML5-Animations/less/animations/belegungsstrategien.less">
 </head>
-<body>
-
-</body>
+    <body>
+        <main>
+            <header>
+                <h1>Belegungstrategien</h1>
+            </header>
+            <section class="main">
+                <article class="choosestrategy">
+                    <h2>Strategie wählen:</h2>
+                    <select>
+                        <option value="ff">First Fit</option>
+                        <option value="nf">Next Fit</option>
+                        <option value="bf">Best Fit</option>
+                        <option value="wf">Worst Fit</option>
+                    </select>
+                </article>
+                <article class="choosememory">
+                    <h2>Speichergröße wählen:</h2>
+                    <input type="text">
+                </article>
+                <article class="settings">
+                    <button class="apply" type="button">Übernehmen</button>
+                    <button class="reset" type="reset">Reset</button>
+                    <button class="auto" type="button">Auto</button>
+                    <input type="range">
+                </article>
+            </section>
+            <footer></footer>
+        </main>
+    </body>
+    <script type="text/javascript" src="/HTML5-Animations/js/libs/less.js"></script>
 </html>
